@@ -26,9 +26,9 @@ let update = () => {
 	for(let i = 0; i < n.length; i += 2) {
 		out += `
 
-	node_stack_interstage0${i/2+1}a = 0.0, ${n[i]+(.01*(s-1))}, 0.0, 0.0, -1.0, 0.0, 0`
+	node_stack_interstage0${i/2+1}a = 0.0, ${n[i]+(.01*(s-1))}, 0.0, 0.0, -1.0, 0.0, ${Math.ceil(Math.max(s-1, 0))}`
 		out += `
-	node_stack_interstage0${i/2+1}b = 0.0, ${n[i+1]-(.01*(s-1))}, 0.0, 0.0, 1.0, 0.0, 0`
+	node_stack_interstage0${i/2+1}b = 0.0, ${n[i+1]-(.01*(s-1))}, 0.0, 0.0, 1.0, 0.0, ${Math.ceil(Math.max(s-1, 0))}`
 	}
 	out += `
 	MODULE
