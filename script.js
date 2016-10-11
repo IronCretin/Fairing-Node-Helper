@@ -22,7 +22,14 @@ let update = () => {
 		scale = ${s},${s},${s}
 		position = 0.0,${t},0.0
 	}`
-	let n = nodes.map(n => n + t)
+	let n = nodes.map(n => (n * s) + t)
+	for(let i = 0; i < n.length; i += 2) {
+		out += `
+
+	node_stack_interstage0${i/2+1}a = 0.0, ${n[i]}, 0.0, 0.0, -1.0, 0.0, 0`
+		out += `
+	node_stack_interstage0${i/2+1}b = 0.0, ${n[i+1]}, 0.0, 0.0, 1.0, 0.0, 0`
+	}
     cfg.innerHTML = out
 }
 
