@@ -13,9 +13,19 @@ form div {
 label {
     display: inline-block;
     width: 40%;
+    text-align: right;
+}
+input {
+    display: inline-block;
+    margin-left: 1em;
 }
 textarea {
     display: block;
     width: 100%;
-    height: 10em
+    height: 10em;
+    margin-top: 1em
+}
+#calc {
+    display: inline-block;
+    margin-left: 1em;
 }
