@@ -1,0 +1,21 @@
+form {
+    padding: 1em;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #d9cebf;
+    background-color: #faecda;
+    border-radius: 20px;
+    width: 25em;
+}
+form div {
+    margin: 10px;
+}
+label {
+    display: inline-block;
+    width: 40%;
+}
+textarea {
+    display: block;
+    width: 100%;
+    height: 10em
+}
